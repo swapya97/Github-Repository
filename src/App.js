@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [data, setdata] = useState({});
   const [repoList, setrepoList] = useState([]);
-  const [followers, setfollowers] = useState([]);
+ 
   const [username, setusername] = useState("swapya97");
   useEffect(
     (_) => {
@@ -31,15 +31,6 @@ function App() {
     [username]
   );
 
-  useEffect(
-    (_) => {
-      (async (_) => {
-        const response = await github.get(`${username}/followers`);
-        setfollowers(response.data);
-      })();
-    },
-    [username]
-  );
   const Searchedusername = (keyword) => {
     setusername(keyword);
   };
