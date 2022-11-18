@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;400&family=Rubik&family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #171717;
+  color: aliceblue;
+}
+main {
+  background-color: #171717;
+  margin: auto;
+  max-width: 1000px;
+}
+main > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292828;
+  width: 400px;
+  height: 60px;
+  font-size: 30px;
+  letter-spacing: 7px;
+  box-shadow: 1px 1px 2px gray;
+  position: relative;
+  left: -12vw;
+}
+img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 15px 0px 0px 20px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto 10px auto;
+  width: 600px;
+  height: 80px;
+  background-color: #171717;
+}
+.search > form > input {
+  margin-right: 25px;
+  width: 450px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 17px;
+  border-color: transparent;
+  color: #ac4124;
+}
+.search > form > button {
+  width: 80px;
+  height: 27px;
+  border: solid 1px white;
+  border-radius: 3px;
+  background-color: #e54001;
+  color: #000000;
+}
+.search > form > button:hover {
+  background-color: #e54001;
+  width: 85px;
+  height: 27px;
+  color: white;
+}
+.card {
+  border: 1px solid rgb(70, 69, 69);
+  border-radius: 5px;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+}
+.card:hover {
+  box-shadow: 1px 1px 5px gray;
+}
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  color: #c9cacc;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.cardHeader > h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  margin: auto;
+  border: 1px solid #e54001;
+  border-radius: 2px;
+  padding: 3px;
+  box-shadow: 1px 1px 1px 5px #e54001;
+}
+.cardMiddle {
+  color: #c9cacc;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  border: solid 1px gray;
+  width: 200px;
+  border-radius: 5px;
+  margin: 25px auto 10px auto;
+}
+.cardBottom {
+  color: #46322a;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  border-radius: 5px;
+  margin: 25px auto 10px auto;
+}
+span {
+  display: flex;
+  justify-content: center;
+}
+.cardBottom > span > button {
+  width: 40px;
+  background-color: #e54001;
+  border: solid 1px transparent;
+  border-radius: 5px;
+}
+
+/* repoList/ */
+.repoList {
+  display: flex;
+  margin: 20px auto 10px auto;
+  width: 600px;
+}
+.repoList > li {
+  text-decoration: none;
+  margin: auto;
+}
+.repoList > li > a {
+  color: #46322a;
+}
+ol {
+  color: rgb(61, 61, 61);
+}
+.repo > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222020;
+  margin: 20px auto 1px auto;
+  width: 500px;
+  height: 50px;
+  font-family: "Satisfy";
+
+  font-size: 30px;
+}
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #292828;
+  max-width: 100%;
+  height: 350px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 100px;
+}
+
+.footerimg {
+  width: 30px;
+  height: 30px;
+}
+.footerleft {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 60px;
+  max-width: 300px;
+  height: 300px;
+}
+.footerright {
+  width: 800px;
+  height: 300px;
+  margin: 20px 50px 0 0;
+  font-size: 15px;
+  display: flex;
+  gap: 10rem;
+  justify-content: flex-start;
+}
+.div1 {
+  display: flex;
+}
+.div1:hover {
+  filter: invert(9);
+  color: black;
+}
+.div1 > h3 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 5px;
+  top: 7px;
+  font-size: 20px;
+  color: #0084ff;
+  text-decoration: underline;
+}
+.div2 {
+  max-width: 300px;
+  margin: 30px 0 0 25px;
+  font-size: 13px;
+  color: #7b8692;
+}
+.div3 > a {
+  color: #7b8692;
+  text-decoration: none;
+}
+.div4 > a {
+  color: #7b8692;
+  text-decoration: none;
+}
+.div5 > a {
+  color: #7b8692;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  .search {
+    width: 400px;
+  }
+  .search > form > input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .search > form > button {
+    margin-right: 20px;
+  }
+  main > h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292828;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 2px gray;
+    position: relative;
+  }
+  img {
+    width: 80px;
+    height: 85px;
+    border-radius: 50%;
+    margin: 15px 0px 15px 20px;
+  }
+  .cardBottom {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -55px;
+  }
+  .repo > h3 {
+    width: 300px;
+  }
+  .repoList > li {
+    position: absolute;
+    left: 60px;
+  }
+  .footerimg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footerleft {
+    width: 400px;
+    height: 300px;
+    font-size: 5px;
+    margin: 0px 10px 0px 5px;
+  }
+  .div1 > h3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 5px;
+    top: -3px;
+    font-size: 10px;
+    width: 100px;
+  }
+  .div2 {
+    margin-top: -1px;
+    font-size: 15px;
+    color: #7b8692;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerright {
+    width: 800px;
+    height: 300px;
+    margin: 20px 50px 0 0;
+    font-size: 15px;
+    display: flex;
+    gap: 80px;
+    justify-content: flex-start;
+  }
+}
